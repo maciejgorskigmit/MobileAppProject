@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button> 
+      <ion-title>Flashlight</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h3>The Flashlight is {{lightStatus}}.</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><hr></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button round (click)="toggleLight()">Toggle Flashlight</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

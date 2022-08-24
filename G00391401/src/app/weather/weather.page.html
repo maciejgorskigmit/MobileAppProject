@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <!-- button will not appear for some reason. reload app to return to home -->
+      <ion-back-button></ion-back-button> 
+      <ion-title>Weather</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>Weather in Galway Today:</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><hr></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Clouds: {{weather.condition.text}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Actual Temperature: {{weather.temp_c}} degrees Celsius</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Feels Like: {{weather.feelslike_c}} degrees Celsius</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

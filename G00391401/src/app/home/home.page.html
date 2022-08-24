@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-title>Hello, {{username}}</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><hr></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button round (click)="updateName()">Update Name</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button round (click)="openFlashlight()">Use the Flashlight</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button round (click)="openWeather()">Check the Weather</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
